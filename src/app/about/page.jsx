@@ -132,7 +132,7 @@ const AboutPage = () => {
               My foundation in Computer Science, coupled with  experience in web development, has equipped me with the skills to architect and implement digital solutions that marry functionality with aesthetics.
               Now, I stand at the precipice of my next chapter, eagerly seeking a full-time position that will harness my expertise and passion for innovation. Open to relocation for office-based opportunities, I am poised to contribute my talents to dynamic teams across Germany.
               With a degree in Engineering under my belt, I fulfill the prerequisites for a Blue Card Visa application, paving the way for seamless integration into the German workforce. All that remains is the opportunity to embark on this journey — a contract that aligns with my ambitions and values.
-              Let's collaborate and build something extraordinary together.
+              How about we join forces and create something truly remarkable in collaboration?
             </p>
             {/*BIOGRAPHY SIGN SVG*/}
             <div className="self-end">

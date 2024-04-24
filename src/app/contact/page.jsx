@@ -61,17 +61,18 @@ const ContactPage = () => {
           </div>
         </div>
         {/*FORM CONTAINER*/}
-        <div className="h-4/6 w-5/6 lg:h-4/5 lg:w-2/5 bg-red-50 rounded-xl">
+        {/*<div className="h-4/6 w-5/6 lg:h-4/5 lg:w-2/5 bg-red-50 rounded-xl">*/}
+        <div className="h-auto w-5/6 lg:w-2/5 bg-red-50 rounded-xl">
           <form
             onSubmit={sendEmail}
             ref={form}
-            className="text-xl flex flex-col gap-1 lg:gap-2 justify-center p-4 lg:p-12 mt-10"
+            className="text-xl flex flex-col gap-1 lg:gap-2 justify-normal p-4 lg:p-12 mt-5"
           >
             <label htmlFor="user_message">Dear Artem Skakun,</label>
             <textarea
               id="message"
               name="user_message"
-              rows="5"
+              rows="6"
               className="bg-transparent border-b-2 border-b-black outline-none resize-none"
               required
               autoFocus

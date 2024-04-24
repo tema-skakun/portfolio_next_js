@@ -78,6 +78,7 @@ const Navbar = () => {
         ))}
       </div>
       {/*SOCIAL*/}
+      {/*need refactor*/}
       <div className="flex gap-4 w-1/3 items-center justify-end">
         <Link href="https://linkedin.com/in/artem-skakun" target="_blank">
           <Image src={basePath + "/linkedin.svg"} alt="linkedin" width={24} height={24} aria-hidden="true"/>

@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
+  basePath: "/portfolio_next_js",
+  // assetPrefix: "/portfolio_next_js",
+  output: "export",
   reactStrictMode: true,
 };
 

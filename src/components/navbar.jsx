@@ -13,6 +13,8 @@ const links = [
   {url: "/contact", title: "Contact"},
 ];
 
+  const basePath = "/portfolio_next_js";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -78,13 +80,13 @@ const Navbar = () => {
       {/*SOCIAL*/}
       <div className="flex gap-4 w-1/3 items-center justify-end">
         <Link href="https://linkedin.com/in/artem-skakun" target="_blank">
-          <Image src="/linkedin.svg" alt="linkedin" width={24} height={24} aria-hidden="true"/>
+          <Image src={basePath + "/linkedin.svg"} alt="linkedin" width={24} height={24} aria-hidden="true"/>
         </Link>
         <Link href="https://github.com/tema-skakun" target="_blank">
-          <Image src="/github.svg" alt="github" width={24} height={24} aria-hidden="true"/>
+          <Image src={basePath + "/github.svg"} alt="github" width={24} height={24} aria-hidden="true"/>
         </Link>
         <Link href="https://instagram.com/tema_skakun" target="_blank">
-          <Image src="/instagram.svg" alt="instagram" width={24} height={24} aria-hidden="true"/>
+          <Image src={basePath + "/instagram.svg"} alt="instagram" width={24} height={24} aria-hidden="true"/>
         </Link>
       </div>
       {/*RESPONSIVE MENU*/}

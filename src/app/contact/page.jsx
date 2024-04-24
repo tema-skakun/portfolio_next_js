@@ -71,7 +71,7 @@ const ContactPage = () => {
             <textarea
               id="message"
               name="user_message"
-              rows="6"
+              rows="5"
               className="bg-transparent border-b-2 border-b-black outline-none resize-none"
               required
               autoFocus

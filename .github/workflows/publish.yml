@@ -32,6 +32,10 @@ jobs:
 
       - name: Build with Next.js 🏗️
         run: npx next build
+        env:
+          NEXT_PUBLIC_SERVICE_ID: service_2c9ism9
+          NEXT_PUBLIC_TEMPLATE_ID: template_01mnr6m
+          NEXT_PUBLIC_PUBLIC_KEY: zhFO1ROWHWDSFZZqC
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3

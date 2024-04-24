@@ -3,6 +3,7 @@ import {motion, useScroll, useTransform} from "framer-motion";
 import React, {useRef} from "react";
 import Link from "next/link";
 import ScrollArrow from "@/components/scrollArrow";
+import Image from "next/image";
 
 const items = [
   {
@@ -16,18 +17,18 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Next.js Application",
-    desc: "In this project, I explored Next.js, a cutting-edge JavaScript framework by Vercel, built on React.js. Next.js tackles React developer challenges, offering robust features like server-side rendering (SSR) and static site generation (SSG). This experience revealed Next.js's transformative potential in web app development and optimization.",
-    img: "/next_js_app.png",
-    link: "https://next-5ky9e2thj-temas-projects-7e652ad5.vercel.app/",
-  },
-  {
-    id: 2,
-    color: "from-blue-300 to-violet-300",
     title: "Blog Application",
     desc: "In this project, I ventured into backend web development with Node.js and MongoDB. Through hands-on tasks, I mastered crafting dynamic web applications from the ground up. This journey not only sharpened my backend skills but also deepened my understanding of building robust, scalable apps. With expertise in Node.js and MongoDB, I'm primed for tackling ambitious projects ahead.",
     img: "/node_js_app.png",
     link: "https://blog-node-js-rnkc.onrender.com/",
+  },
+  {
+    id: 2,
+    color: "from-blue-300 to-violet-300",
+    title: "Next.js Application",
+    desc: "In this project, I explored Next.js, a cutting-edge JavaScript framework by Vercel, built on React.js. Next.js tackles React developer challenges, offering robust features like server-side rendering (SSR) and static site generation (SSG). This experience revealed Next.js's transformative potential in web app development and optimization.",
+    img: "/next_js_app.png",
+    link: "https://next-5ky9e2thj-temas-projects-7e652ad5.vercel.app/",
   },
   {
     id: 3,
@@ -48,6 +49,8 @@ const items = [
     link: "https://tema-skakun.github.io/ts-frontend/",
   },
 ];
+
+const basePath = "/portfolio_next_js";
 
 const PortfolioPage = () => {
 
@@ -74,23 +77,23 @@ const PortfolioPage = () => {
               className=" h-[calc(100vh-6rem) w-screen flex justify-center bg-gradient-to-r from-blue-300 to-purple-300 items-center text-8xl text-center"/>
             {items.map(item => (
               <div
-                className={`h-screen w-screen flex justify-center items-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen w-screen flex justify-center items-start pt-10 bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-6 text-white">
-                  {/*<div className="relative h-56 w-auto md:h-64">*/}
-                  {/*  <Image src={item.img} alt={item.id} fill/>*/}
-                  {/*</div>*/}
+                <div className="flex flex-col justify-center gap-1 lg:gap-2 xl:gap-6 2xl:gap-8 text-white">
+                  <div className="relative h-40 md:h-60 lg:h-80 xl:h-90 2xl:h-120">
+                    <Image src={basePath + item.img} alt={item.id} fill className="flex justify-start object-contain"/>
+                  </div>
                   <h2 className="text-xl font-bold md:text-2xl lg:text-4xl xl:text-6xl">
                     {item.title}
                   </h2>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex" target="_blank">
+                  <Link href={item.link} className="flex justify-center" target="_blank">
                     <button
-                      className="p-2 text-sm md:p-3 md:text-md lg:p-4 lg:text-lg bg-white text-gray-500 hover:bg-black hover:text-gray-200 font-semibold m-2 rounded">
-                      Visit Site
+                      className="p-2 text-sm md:p-3 md:text-md lg:p-4 lg:text-lg bg-white text-gray-500 hover:bg-black hover:text-gray-200 font-semibold rounded">
+                      Visit Website
                     </button>
                   </Link>
                 </div>

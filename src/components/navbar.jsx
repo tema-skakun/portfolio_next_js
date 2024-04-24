@@ -13,7 +13,28 @@ const links = [
   {url: "/contact", title: "Contact"},
 ];
 
-  const basePath = "/portfolio_next_js";
+const socials = [
+  {
+    id: 0,
+    link: "https://linkedin.com/in/artem-skakun",
+    pathToImage: "/linkedin.svg",
+    altText: "linkedin",
+  },
+  {
+    id: 1,
+    link: "https://github.com/tema-skakun",
+    pathToImage: "/github.svg",
+    altText: "github",
+  },
+  {
+    id: 2,
+    link: "https://instagram.com/tema_skakun",
+    pathToImage: "/instagram.svg",
+    altText: "instagram",
+  },
+];
+
+const basePath = "/portfolio_next_js";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -78,17 +99,17 @@ const Navbar = () => {
         ))}
       </div>
       {/*SOCIAL*/}
-      {/*need refactor*/}
       <div className="flex gap-4 w-1/3 items-center justify-end">
-        <Link href="https://linkedin.com/in/artem-skakun" target="_blank">
-          <Image src={basePath + "/linkedin.svg"} alt="linkedin" width={24} height={24} aria-hidden="true"/>
-        </Link>
-        <Link href="https://github.com/tema-skakun" target="_blank">
-          <Image src={basePath + "/github.svg"} alt="github" width={24} height={24} aria-hidden="true"/>
-        </Link>
-        <Link href="https://instagram.com/tema_skakun" target="_blank">
-          <Image src={basePath + "/instagram.svg"} alt="instagram" width={24} height={24} aria-hidden="true"/>
-        </Link>
+        {socials.map(social => (
+          <Link key={social.id} href={social.link} target="_blank">
+            <Image
+              src={basePath + social.pathToImage}
+              alt={social.altText}
+              width={24}
+              height={24}
+            />
+          </Link>
+        ))}
       </div>
       {/*RESPONSIVE MENU*/}
       <div className="md:hidden">
@@ -126,7 +147,6 @@ const Navbar = () => {
         )}
       </div>
     </div>
-
   )
 }
 

@@ -61,7 +61,6 @@ const ContactPage = () => {
           </div>
         </div>
         {/*FORM CONTAINER*/}
-        {/*<div className="h-4/6 w-5/6 lg:h-4/5 lg:w-2/5 bg-red-50 rounded-xl">*/}
         <div className="h-auto w-5/6 lg:w-2/5 bg-red-50 rounded-xl">
           <form
             onSubmit={sendEmail}
@@ -82,15 +81,20 @@ const ContactPage = () => {
               name="user_email"
               type="email"
               id="email"
-              // pattern=".+@example\.com"
               className="bg-transparent border-b-2 border-b-black outline-none"
               size="30"
               required
             />
             <span>Regards</span>
             <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">Send</button>
-            {success && <span className="flex justify-center text-green-500 font-semibold text-sm">Your message has been sent successfully!</span>}
-            {error && <span className="flex justify-center text-red-500 font-semibold text-sm">Something went wrong!</span>}
+            {success &&
+              <span className="text-green-500 font-semibold text-sm">
+                Your message has been sent successfully!
+              </span>}
+            {error &&
+              <span className="text-red-500 font-semibold text-sm">
+                Something went wrong!
+              </span>}
           </form>
         </div>
       </div>

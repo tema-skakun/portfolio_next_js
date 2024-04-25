@@ -36,23 +36,25 @@ const TimeLine = ({divId, title, items}) => {
                 {/* LEFT */}
                 <div className="w-2/5">
                   {/* TITLE */}
-                  <div className="bg-white p-3 flex justify-center font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-semibold rounded-tl-2xl">
                     {item.title}
                   </div>
                   {/* DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="bg-white p-3 text-sm">
                     {item.description}
                   </div>
                   {/* DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="bg-white p-3 text-red-400 text-sm font-semibold">
                     {item.date}
                   </div>
                   {/* NAME */}
-                  <Link href={item.link} target="_blank">
-                    <button className="p-1 m-3 rounded bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
-                      {item.company}
-                    </button>
-                  </Link>
+                  <div className="bg-white rounded-b-2xl">
+                    <Link href={item.link} target="_blank">
+                      <button className="p-3 rounded-bl-2xl rounded-tr-2xl bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
+                        {item.company}
+                      </button>
+                    </Link>
+                  </div>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/10">
@@ -83,23 +85,25 @@ const TimeLine = ({divId, title, items}) => {
                 {/* RIGHT */}
                 <div className="w-2/5">
                   {/* TITLE */}
-                  <div className="bg-white p-3 flex justify-center font-semibold rounded-r-lg rounded-bl-lg items-end">
+                  <div className="bg-white p-3 font-semibold rounded-tr-2xl">
                     {item.title}
                   </div>
                   {/* DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="bg-white p-3 text-sm">
                     {item.description}
                   </div>
                   {/* DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="bg-white p-3 text-red-400 text-sm font-semibold">
                     {item.date}
                   </div>
                   {/* NAME */}
-                  <Link href={item.link} target="_blank">
-                    <button className="p-1 m-3 rounded bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
-                      {item.company}
-                    </button>
-                  </Link>
+                  <div className="bg-white rounded-b-2xl">
+                    <Link href={item.link} target="_blank">
+                      <button className="p-3 rounded-bl-2xl rounded-tr-2xl bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
+                        {item.company}
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             )

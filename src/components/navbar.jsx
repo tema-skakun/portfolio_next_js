@@ -32,6 +32,12 @@ const socials = [
     pathToImage: "/instagram.svg",
     altText: "instagram",
   },
+  {
+    id: 3,
+    link: "https://t.me/tema_skakun",
+    pathToImage: "/telegram.svg",
+    altText: "telegram",
+  },
 ];
 
 const basePath = "/portfolio_next_js";

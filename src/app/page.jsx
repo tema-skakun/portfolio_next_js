@@ -19,8 +19,8 @@ const Homepage = () => {
         {/*TEXT CONTAINER*/}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-3xl md:text-5xl font-bold items-center justify-center">
-            Crafting Digital Experiences, Designing Tomorrow.
+          <h1 className="text-2xl md:text-4xl font-bold items-center justify-center">
+            Hi, my name is Artem Skakun
           </h1>
           {/* DESC */}
           <p className="md:text-xl">

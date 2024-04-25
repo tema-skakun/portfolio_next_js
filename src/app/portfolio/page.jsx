@@ -26,7 +26,7 @@ const items = [
     id: 2,
     color: "from-blue-300 to-violet-300",
     title: "Next.js Application",
-    desc: "In this project, I explored Next.js, a cutting-edge JavaScript framework by Vercel, built on React.js. Next.js tackles React developer challenges, offering robust features like server-side rendering (SSR) and static site generation (SSG). This experience revealed Next.js's transformative potential in web app development and optimization.",
+    desc: "In this project, I explored Next.js and React.js. Next.js tackles React developer challenges, offering robust features like server-side rendering (SSR) and static site generation (SSG). This experience revealed Next.js's transformative potential in web app development and optimization. To view the website, you will need a Vercel account.",
     img: "/next_js_app.png",
     link: "https://next-5ky9e2thj-temas-projects-7e652ad5.vercel.app/",
   },

@@ -81,7 +81,7 @@ const jobs = [
     id: 2,
     title: "Computer Science",
     description: "In my journey as a software developer, I've honed my skills through hands-on experience, completing a total of 23 learning projects, including 4 collaborative endeavors.",
-    date: "10/2021 - 08/2023",
+    date: "10/2021 - Present",
     company: "42 Wolfsburg",
     link: "https://42wolfsburg.de/about-us/",
   },

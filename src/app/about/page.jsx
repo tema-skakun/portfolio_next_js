@@ -75,6 +75,7 @@ const jobs = [
     description: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Vue.js, Typescript, Node.js, Express, and MongoDB.",
     date: "09/2023 - 02/2024",
     company: "TradeLink",
+    link: "https://tradelink.pro/",
   },
   {
     id: 2,
@@ -82,6 +83,7 @@ const jobs = [
     description: "In my journey as a web developer, I've honed my skills through hands-on experience, completing a total of 23 learning projects, including 4 collaborative endeavors.",
     date: "10/2021 - 08/2023",
     company: "42 Wolfsburg",
+    link: "https://42wolfsburg.de/about-us/",
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ const jobs = [
     description: "I have been involved in the construction of residential neighborhoods and sports complexes. Managed the geodesy department, interacted with engineers of contractor organizations, analyzed and prepared comments on design documentation, performed geodetic works. Worked with design documentation in AutoCAD and MS Office.",
     date: "07/2017 - 09/2021",
     company: "FODD",
+    link: "http://www.fodd.ru/166.html",
   },
   {
     id: 4,
@@ -96,6 +99,7 @@ const jobs = [
     description: "I studied at the Faculty of Civil Engineering, Department of Engineering Geodesy and received a Master's degree. I defended my thesis on 'Observations of deformations of buildings and structures by trigonometric methods'.",
     date: "09/2012 - 06/2017",
     company: "Saint Petersburg Mining University",
+    link: "https://en.spmi.ru/university",
   },
 ];
 

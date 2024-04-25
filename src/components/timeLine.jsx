@@ -2,6 +2,7 @@
 
 import React, {useRef} from 'react';
 import {motion, useInView} from "framer-motion";
+import Link from "next/link";
 
 const TimeLine = ({divId, title, items}) => {
 
@@ -35,13 +36,23 @@ const TimeLine = ({divId, title, items}) => {
                 {/* LEFT */}
                 <div className="w-2/5">
                   {/* TITLE */}
-                  <div className="bg-white p-3 flex justify-center font-semibold rounded-b-lg rounded-s-lg">{item.title}</div>
+                  <div className="bg-white p-3 flex justify-center font-semibold rounded-b-lg rounded-s-lg">
+                    {item.title}
+                  </div>
                   {/* DESC */}
-                  <div className="p-3 text-sm italic">{item.description}</div>
+                  <div className="p-3 text-sm italic">
+                    {item.description}
+                  </div>
                   {/* DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">{item.date}</div>
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    {item.date}
+                  </div>
                   {/* NAME */}
-                  <div className="p-1 m-3 rounded bg-red-100 text-sm font-semibold w-fit">{item.company}</div>
+                  <Link href={item.link} target="_blank">
+                    <button className="p-1 m-3 rounded bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
+                      {item.company}
+                    </button>
+                  </Link>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/10">
@@ -72,13 +83,23 @@ const TimeLine = ({divId, title, items}) => {
                 {/* RIGHT */}
                 <div className="w-2/5">
                   {/* TITLE */}
-                  <div className="bg-white p-3 flex justify-center font-semibold rounded-r-lg rounded-bl-lg items-end">{item.title}</div>
+                  <div className="bg-white p-3 flex justify-center font-semibold rounded-r-lg rounded-bl-lg items-end">
+                    {item.title}
+                  </div>
                   {/* DESC */}
-                  <div className="p-3 text-sm italic">{item.description}</div>
+                  <div className="p-3 text-sm italic">
+                    {item.description}
+                  </div>
                   {/* DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">{item.date}</div>
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    {item.date}
+                  </div>
                   {/* NAME */}
-                  <div className="p-1 m-3 rounded bg-red-100 text-sm font-semibold w-fit">{item.company}</div>
+                  <Link href={item.link} target="_blank">
+                    <button className="p-1 m-3 rounded bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
+                      {item.company}
+                    </button>
+                  </Link>
                 </div>
               </div>
             )

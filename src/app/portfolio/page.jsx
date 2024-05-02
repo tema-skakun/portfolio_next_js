@@ -10,12 +10,20 @@ const items = [
     id: 0,
     color: "from-purple-300 to-red-300",
     title: "TradeLink Web App",
-    desc: " I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Vue.js, Typescript, Node.js, Express, and MongoDB.",
+    desc: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Vue.js, Typescript, Node.js, Express, and MongoDB.",
     img: "/TradeLink_app.png",
     link: "https://tradelink.pro/",
   },
   {
     id: 1,
+    color: "from-red-300 to-red-300",
+    title: "Accessible Form",
+    desc: "This project is dedicated to developing an accessible registration form aligned with the Web Content Accessibility Guidelines (WCAG). I created a user-friendly registration process that caters to individuals of all abilities, including those who rely on assistive technologies like screen readers.",
+    img: "/Accessible_registration_form.png",
+    link: "https://tema-skakun.github.io/accessible-registration-form/",
+  },
+  {
+    id: 2,
     color: "from-red-300 to-blue-300",
     title: "Blog Application",
     desc: "In this project, I ventured into backend web development with Node.js and MongoDB. Through hands-on tasks, I mastered crafting dynamic web applications from the ground up. This journey not only sharpened my backend skills but also deepened my understanding of building robust, scalable apps. With expertise in Node.js and MongoDB, I'm primed for tackling ambitious projects ahead.",
@@ -23,7 +31,7 @@ const items = [
     link: "https://blog-node-js-rnkc.onrender.com/",
   },
   {
-    id: 2,
+    id: 3,
     color: "from-blue-300 to-violet-300",
     title: "Next.js Application",
     desc: "In this project, I explored Next.js and React.js. Next.js tackles React developer challenges, offering robust features like server-side rendering (SSR) and static site generation (SSG). This experience revealed Next.js's transformative potential in web app development and optimization. To view the website, you will need a Vercel account.",
@@ -31,7 +39,7 @@ const items = [
     link: "https://next-5ky9e2thj-temas-projects-7e652ad5.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     color: "from-violet-300 to-purple-300",
     title: "My Social Network",
     desc: "This is a Single Page Application is implemented on the React library, state management is implemented using Redux-Toolkit. " +
@@ -41,7 +49,7 @@ const items = [
     link: "https://tema-skakun.github.io/my-social-network/",
   },
   {
-    id: 4,
+    id: 5,
     color: "from-purple-300 to-red-300",
     title: "Data Charts",
     desc: "Leveraging the power of Angular, TypeScript, HTML, and CSS, I created a feature-rich application that offers intuitive chart display functionalities and efficient data management.",

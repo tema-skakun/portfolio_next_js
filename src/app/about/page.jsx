@@ -181,7 +181,7 @@ const AboutPage = () => {
             >
               {skills.map(skill => (
                 <div
-                  className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+                  className="rounded p-2 text-sm cursor-pointer transition ease-in-out duration-300 bg-black text-white hover:bg-white hover:text-black"
                   key={skill.id}
                 >
                   {skill.name}

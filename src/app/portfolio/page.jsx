@@ -3,7 +3,8 @@ import {motion, useScroll, useTransform} from "framer-motion";
 import React, {useRef} from "react";
 import Link from "next/link";
 import ScrollArrow from "@/components/scrollArrow";
-import Image from "next/image";
+// import Image from "next/image";
+import PortfolioItem from "@/components/portfolioItem";
 
 const items = [
   {
@@ -82,30 +83,18 @@ const PortfolioPage = () => {
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{x}} className="flex">
             <div
-              className=" h-[calc(100vh-6rem) w-screen flex justify-center bg-gradient-to-r from-blue-300 to-purple-300 items-center text-8xl text-center"/>
+              className="w-screen flex justify-center bg-gradient-to-r from-blue-300 to-purple-300 items-center text-8xl text-center"/>
             {items.map(item => (
-              <div
-                className={`h-screen w-screen flex justify-center items-start pt-10 bg-gradient-to-r ${item.color}`}
+              <PortfolioItem
                 key={item.id}
-              >
-                <div className="flex flex-col justify-center gap-1 lg:gap-2 xl:gap-6 2xl:gap-8 text-white">
-                  <div className="relative h-40 md:h-60 lg:h-80 xl:h-90 2xl:h-120">
-                    <Image src={basePath + item.img} alt={item.id} fill className="flex justify-start object-contain"/>
-                  </div>
-                  <h2 className="text-xl font-bold md:text-2xl lg:text-4xl xl:text-6xl">
-                    {item.title}
-                  </h2>
-                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                    {item.desc}
-                  </p>
-                  <Link href={item.link} className="flex justify-center" target="_blank">
-                    <button
-                      className="p-2 text-sm md:p-3 md:text-md lg:p-4 lg:text-lg bg-white text-gray-500 hover:bg-black hover:text-gray-200 font-semibold rounded">
-                      Visit Website
-                    </button>
-                  </Link>
-                </div>
-              </div>
+                id={item.id}
+                basePath={basePath}
+                img={item.img}
+                title={item.title}
+                desc={item.desc}
+                link={item.link}
+                color={item.color}
+              />
             ))}
             <div
               className="lg:w-[calc(50vw)] w-[calc(100vw-17rem)] flex justify-center bg-red-300 items-center text-8xl text-center"/>
@@ -136,7 +125,7 @@ const PortfolioPage = () => {
           </motion.svg>
           <Link href="/contact">
             <p
-              className="w-16 h-16 text-xs md:w-28 md:h-28 md:text-xl absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+              className="w-16 h-16 text-xs md:w-28 md:h-28 md:text-xl absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center transition ease-in-out delay-50 hover:scale-110 duration-300"
             >
               Hire Me
             </p>

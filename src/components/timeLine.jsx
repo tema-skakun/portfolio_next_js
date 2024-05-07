@@ -50,7 +50,7 @@ const TimeLine = ({divId, title, items}) => {
                   {/* NAME */}
                   <div className="bg-white rounded-b-2xl">
                     <Link href={item.link} target="_blank">
-                      <button className="p-3 rounded-bl-2xl rounded-tr-2xl bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
+                      <button className="p-3 rounded-bl-2xl rounded-tr-2xl transition ease-in-out duration-300 bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
                         {item.company}
                       </button>
                     </Link>
@@ -99,7 +99,7 @@ const TimeLine = ({divId, title, items}) => {
                   {/* NAME */}
                   <div className="bg-white rounded-b-2xl">
                     <Link href={item.link} target="_blank">
-                      <button className="p-3 rounded-bl-2xl rounded-tr-2xl bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
+                      <button className="p-3 rounded-bl-2xl rounded-tr-2xl transition ease-in-out duration-300 bg-red-100 text-sm font-semibold w-fit hover:bg-blue-200 hover:ring-1 hover:ring-black">
                         {item.company}
                       </button>
                     </Link>

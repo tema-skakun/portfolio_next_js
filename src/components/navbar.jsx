@@ -1,16 +1,16 @@
 "use client"
 
 import Link from "next/link";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import Image from "next/image";
 import NavLink from "@/components/navLink";
 import {motion} from "framer-motion";
 
 const links = [
-  {url: "/", title: "Home"},
-  {url: "/about", title: "About"},
-  {url: "/portfolio", title: "Portfolio"},
-  {url: "/contact", title: "Contact"},
+  {id: 0, url: "/", title: "Home"},
+  {id: 1, url: "/about", title: "About"},
+  {id: 2, url: "/portfolio", title: "Portfolio"},
+  {id: 3, url: "/contact", title: "Contact"},
 ];
 
 const socials = [
@@ -44,6 +44,14 @@ const basePath = "/portfolio_next_js";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowNavbar(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const topVariants = {
     closed: {
@@ -97,16 +105,18 @@ const Navbar = () => {
   };
 
   return (
-    <div id="navbar" className="h-full flex items-center justify-between ml-9 mr-9 lg:ml-20 lg:mr-20 text-xl">
+    <div
+      id="navbar"
+      className={`h-full flex items-center justify-between ml-9 mr-9 lg:ml-20 lg:mr-20 text-xl ${showNavbar ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'}`}>
       {/*LINKS*/}
       <div className="hidden md:flex gap-4 w-1/3">
-        {links.map(link => (
+        {links.map((link) => (
           <NavLink link={link} key={link.title}/>
         ))}
       </div>
       {/*SOCIAL*/}
       <div className="flex gap-4 w-1/3 items-center justify-end">
-        {socials.map(social => (
+        {socials.map((social) => (
           <Link key={social.id} href={social.link} target="_blank">
             <Image
               src={basePath + social.pathToImage}
@@ -120,22 +130,25 @@ const Navbar = () => {
       {/*RESPONSIVE MENU*/}
       <div className="md:hidden">
         {/*MENU BUTTON*/}
-        <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={(() => setOpen(!open))}>
+        <button
+          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          onClick={() => setOpen(!open)}
+        >
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className='w-10 h-1 bg-black rounded origin-left'
-          ></motion.div>
+            className="w-10 h-1 bg-black rounded origin-left"
+          />
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className='w-10 h-1 bg-black rounded'
-          ></motion.div>
+            className="w-10 h-1 bg-black rounded"
+          />
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className='w-10 h-1 bg-black rounded origin-left'
-          ></motion.div>
+            className="w-10 h-1 bg-black rounded origin-left"
+          />
         </button>
         {/*MENU LIST*/}
         {open && (
@@ -143,17 +156,20 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-white text-black flex flex-col items-center justify-center gap-8 text-4xl z-40">
-            {links.map(link => (
-              <motion.div variants={listItemVariants} key={link.title}>
-                <Link href={link.url}>{link.title}</Link>
+            className="absolute top-0 left-0 w-screen h-screen bg-white text-black flex flex-col items-center justify-center gap-8 text-4xl z-40"
+          >
+            {links.map((link) => (
+              <motion.div variants={listItemVariants} key={link.id}>
+                <Link href={link.url}>
+                  {link.title}
+                </Link>
               </motion.div>
             ))}
           </motion.div>
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;

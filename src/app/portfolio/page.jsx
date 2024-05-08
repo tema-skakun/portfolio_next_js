@@ -97,7 +97,7 @@ const PortfolioPage = () => {
               />
             ))}
             <div
-              className="lg:w-[calc(50vw)] w-[calc(100vw-17rem)] flex justify-center bg-red-300 items-center text-8xl text-center"/>
+              className="w-[calc(100vw-12rem)] lg:w-[calc(100vw-17rem)] bg-red-300 items-center"/>
           </motion.div>
         </div>
       </div>

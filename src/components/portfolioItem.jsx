@@ -5,11 +5,11 @@ import React from "react";
 const PortfolioItem = ({id, basePath, img, title, desc, link, color}) => {
   return (
     <div
-      className={`h-screen w-screen flex justify-center items-start pt-10 bg-gradient-to-r ${color}`}
+      className={`h-screen w-screen flex justify-center items-start pt-20 bg-gradient-to-r ${color}`}
     >
-      <div className="flex flex-col justify-center gap-1 lg:gap-2 xl:gap-6 2xl:gap-8 text-white">
+      <div className="flex flex-col gap-1 lg:gap-2 xl:gap-6 2xl:gap-8 text-white">
         <div className="relative h-40 md:h-60 lg:h-80 xl:h-90 2xl:h-120">
-          <Link href={link} className="flex justify-center" target="_blank">
+          <Link href={link} target="_blank">
             <Image
               src={basePath + img} alt={id} fill
               className="flex justify-start object-contain transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"

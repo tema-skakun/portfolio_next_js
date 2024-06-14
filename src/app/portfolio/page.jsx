@@ -11,7 +11,7 @@ const items = [
     id: 0,
     color: "from-purple-300 to-red-300",
     title: "TradeLink Web App",
-    desc: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Vue.js, Typescript, Node.js, Express, and MongoDB.",
+    desc: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Typescript, Next.js, React, Node.js, Express, MongoDB and Redis.",
     img: "/TradeLink_app.png",
     link: "https://tradelink.pro/",
   },

@@ -24,46 +24,42 @@ const skills = [
   },
   {
     id: 5,
-    name: "Vue.js",
-  },
-  {
-    id: 6,
     name: "HTML5",
   },
   {
-    id: 7,
-    name: "SCSS",
+    id: 6,
+    name: "CSS3",
   },
   {
-    id: 8,
+    id: 7,
     name: "Tailwind CSS",
   },
   {
-    id: 9,
+    id: 8,
     name: "Node.js",
   },
   {
-    id: 10,
+    id: 9,
     name: "Express",
   },
   {
-    id: 11,
+    id: 10,
     name: "MongoDB",
   },
   {
-    id: 12,
+    id: 11,
     name: "Postman",
   },
   {
-    id: 13,
+    id: 12,
     name: "Git",
   },
   {
-    id: 14,
+    id: 13,
     name: "WebStorm",
   },
   {
-    id: 15,
+    id: 14,
     name: "Visual Studio Code",
   },
 ];
@@ -72,7 +68,7 @@ const jobs = [
   {
     id: 1,
     title: "Web Developer",
-    description: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Vue.js, Typescript, Node.js, Express, and MongoDB.",
+    description: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Typescript, Next.js, React, Node.js, Express, and MongoDB.",
     date: "09/2023 - 02/2024",
     company: "TradeLink",
     link: "https://tradelink.pro/",
@@ -81,9 +77,9 @@ const jobs = [
     id: 2,
     title: "Computer Science",
     description: "In my journey as a software developer, I've honed my skills through hands-on experience, completing a total of 23 learning projects, including 4 collaborative endeavors.",
-    date: "10/2021 - Present",
-    company: "42 Wolfsburg",
-    link: "https://42wolfsburg.de/about-us/",
+    date: "10/2021 - 08/2023",
+    company: "School 21",
+    link: "https://21-school.ru/",
   },
   {
     id: 3,
@@ -127,7 +123,7 @@ const AboutPage = () => {
           {/*BIOGRAPHY CONTAINER*/}
           <div className="flex flex-col gap-8 justify-center" id="biography">
             {/*BIOGRAPHY TITLE*/}
-            <h2 className="font-bold text-2xl">I am a Web Developer based in Germany</h2>
+            <h2 className="font-bold text-2xl">I am a Web Developer</h2>
             {/*BIOGRAPHY DESC*/}
             <p className="text-lg">
               My Computer Science foundation and experience in web development have equipped me with the skills to
@@ -135,10 +131,7 @@ const AboutPage = () => {
               <br/>
               Now, I stand at the precipice of my next chapter, eagerly seeking a position that will harness my
               expertise and passion for innovation. Open to relocation for office-based opportunities, I am poised to
-              contribute my talents to dynamic teams across Germany.
-              With an Engineering degree, I fulfill the prerequisites for a Blue Card Visa application, paving the way
-              for seamless integration into the German workforce. All that remains is the opportunity to embark on this
-              journey—a contract that aligns with my ambitions and values.
+              contribute my talents to dynamic teams around the world.
               <br/>
               How about we join forces and create something truly remarkable in collaboration?
             </p>

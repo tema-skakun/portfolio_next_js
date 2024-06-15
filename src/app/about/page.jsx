@@ -69,7 +69,7 @@ const jobs = [
     id: 1,
     title: "Web Developer",
     description: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Typescript, Next.js, React, Node.js, Express, and MongoDB.",
-    date: "09/2023 - 02/2024",
+    date: "02/2023 - 02/2024",
     company: "TradeLink",
     link: "https://tradelink.pro/",
   },

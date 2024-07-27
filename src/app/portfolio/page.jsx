@@ -12,7 +12,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "TradeLink Web App",
     desc: "I had the opportunity to contribute to a dynamic and innovative project, leveraging my skills in frontend and backend development to deliver high-quality solutions. Working remotely, I played a pivotal role in developing and enhancing key features of the platform, utilizing a stack comprising Typescript, Next.js, React, Node.js, Express, MongoDB and Redis.",
-    img: "/TradeLink_app.png",
+    img: "/TradeLink_app.webp",
     link: "https://tradelink.pro/",
   },
   {
@@ -20,7 +20,7 @@ const items = [
     color: "from-red-300 to-red-300",
     title: "Accessible Form",
     desc: "This project is dedicated to developing an accessible registration form aligned with the Web Content Accessibility Guidelines (WCAG). I created a user-friendly registration process that caters to individuals of all abilities, including those who rely on assistive technologies like screen readers.",
-    img: "/Accessible_registration_form.png",
+    img: "/Accessible_registration_form.webp",
     link: "https://tema-skakun.github.io/accessible-registration-form/",
   },
   {
@@ -28,7 +28,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Blog Application",
     desc: "In this project, I ventured into backend web development with Node.js and MongoDB. Through hands-on tasks, I mastered crafting dynamic web applications from the ground up. This journey not only sharpened my backend skills but also deepened my understanding of building robust, scalable apps. With expertise in Node.js and MongoDB, I'm primed for tackling ambitious projects ahead.",
-    img: "/node_js_app.png",
+    img: "/node_js_app.webp",
     link: "https://blog-node-js-rnkc.onrender.com/",
   },
   {
@@ -36,7 +36,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Next.js Application",
     desc: "In this project, I explored Next.js and React.js. Next.js tackles React developer challenges, offering robust features like server-side rendering (SSR) and static site generation (SSG). This experience revealed Next.js's transformative potential in web app development and optimization. To view the website, you will need a Vercel account.",
-    img: "/next_js_app.png",
+    img: "/next_js_app.webp",
     link: "https://next-5ky9e2thj-temas-projects-7e652ad5.vercel.app/",
   },
   {
@@ -46,7 +46,7 @@ const items = [
     desc: "This is a Single Page Application is implemented on the React library, state management is implemented using Redux-Toolkit. " +
       "I used AntDesign as the UI framework. The backend is implemented as a REST API, and I interact with it using the Axios library. In order to view the \"friends\" and \"messages\" pages, you need to log in " +
       "use this: Email: free@samuraijs.com; Password: free",
-    img: "/My_Social_Network.png",
+    img: "/My_Social_Network.webp",
     link: "https://tema-skakun.github.io/my-social-network/",
   },
   {
@@ -54,7 +54,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Data Charts",
     desc: "Leveraging the power of Angular, TypeScript, HTML, and CSS, I created a feature-rich application that offers intuitive chart display functionalities and efficient data management.",
-    img: "/Data_Charts.png",
+    img: "/Data_Charts.webp",
     link: "https://tema-skakun.github.io/ts-frontend/",
   },
 ];
@@ -131,7 +131,7 @@ const PortfolioPage = () => {
             </p>
           </Link>
         </div>
-        <ScrollArrow href="#navbar" className="rotate-180"/>
+        <ScrollArrow title="Zoom to the Moon" href="#navbar" className="rotate-180"/>
       </div>
     </motion.div>
   );

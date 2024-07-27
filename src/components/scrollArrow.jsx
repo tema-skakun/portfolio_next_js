@@ -2,7 +2,7 @@ import React from 'react';
 
 const ScrollArrow = ({ href, className }) => {
   return (
-    <a href={href} className={className}>
+    <a href={href} className={className} aria-label="Scroll button">
       <svg
         viewBox="0 0 24 24"
         fill="none"

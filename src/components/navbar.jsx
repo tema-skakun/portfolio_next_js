@@ -5,42 +5,7 @@ import {useState, useEffect} from "react";
 import Image from "next/image";
 import NavLink from "@/components/navLink";
 import {motion} from "framer-motion";
-
-const links = [
-  {id: 0, url: "/", title: "Home"},
-  {id: 1, url: "/about", title: "About"},
-  {id: 2, url: "/portfolio", title: "Portfolio"},
-  {id: 3, url: "/contact", title: "Contact"},
-];
-
-const socials = [
-  {
-    id: 0,
-    link: "https://linkedin.com/in/artem-skakun",
-    pathToImage: "/linkedin.svg",
-    altText: "linkedin",
-  },
-  {
-    id: 1,
-    link: "https://github.com/tema-skakun",
-    pathToImage: "/github.svg",
-    altText: "github",
-  },
-  {
-    id: 2,
-    link: "https://instagram.com/tema_skakun",
-    pathToImage: "/instagram.svg",
-    altText: "instagram",
-  },
-  {
-    id: 3,
-    link: "https://t.me/tema_skakun",
-    pathToImage: "/telegram.svg",
-    altText: "telegram",
-  },
-];
-
-const basePath = "/portfolio_next_js";
+import { LINKS, SOCIALS, BASE_PATH } from "@/constants";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -110,16 +75,16 @@ const Navbar = () => {
       className={`h-full flex items-center justify-between ml-9 mr-9 lg:ml-20 lg:mr-20 text-xl ${showNavbar ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'}`}>
       {/*LINKS*/}
       <div className="hidden md:flex gap-4 w-1/3">
-        {links.map((link) => (
+        {LINKS.map((link) => (
           <NavLink link={link} key={link.title}/>
         ))}
       </div>
       {/*SOCIAL*/}
       <div className="flex gap-4 w-1/3 items-center justify-end">
-        {socials.map((social) => (
+        {SOCIALS.map((social) => (
           <Link key={social.id} href={social.link} target="_blank">
             <Image
-              src={basePath + social.pathToImage}
+              src={BASE_PATH + social.pathToImage}
               alt={social.altText}
               width={24}
               height={24}
@@ -158,7 +123,7 @@ const Navbar = () => {
             animate="opened"
             className="absolute top-0 left-0 w-screen h-screen bg-white text-black flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
-            {links.map((link) => (
+            {LINKS.map((link) => (
               <motion.div variants={listItemVariants} key={link.id}>
                 <Link href={link.url}>
                   {link.title}
